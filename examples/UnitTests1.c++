@@ -69,5 +69,5 @@ Running main() from gtest_main.cc
 [----------] Global test environment set-up.
 [----------] 3 tests from MyUnitTests
 [ RUN      ] MyUnitTests.test_1
-UnitTests1: UnitTests1.c++:19: int cycle_length(int): Assertion `c > 0' failed.
+UnitTests1: UnitTests1.c++:22: int cycle_length(int): Assertion `c > 0' failed.
 */

@@ -44,7 +44,7 @@ Running main() from gtest_main.cc
 [ RUN      ] MyUnitTests.test_1
 [       OK ] MyUnitTests.test_1 (0 ms)
 [ RUN      ] MyUnitTests.test_2
-UnitTests2.c++:26: Failure
+UnitTests2.c++:29: Failure
 Value of: 5
 Expected: cycle_length( 5)
 Which is: 6

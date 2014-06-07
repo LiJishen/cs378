@@ -40,7 +40,6 @@ TEST_F(MyUnitTests, test_3) {
 
 
 % UnitTests3
-UnitTests3.app
 Running main() from gtest_main.cc
 [==========] Running 3 tests from 1 test case.
 [----------] Global test environment set-up.
@@ -51,9 +50,9 @@ Running main() from gtest_main.cc
 [       OK ] MyUnitTests.test_2 (0 ms)
 [ RUN      ] MyUnitTests.test_3
 [       OK ] MyUnitTests.test_3 (0 ms)
-[----------] 3 tests from MyUnitTests (1 ms total)
+[----------] 3 tests from MyUnitTests (0 ms total)
 
 [----------] Global test environment tear-down
-[==========] 3 tests from 1 test case ran. (1 ms total)
+[==========] 3 tests from 1 test case ran. (0 ms total)
 [  PASSED  ] 3 tests.
 */
