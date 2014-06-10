@@ -28,7 +28,7 @@ To run the test:
     % valgrind TestCollatz
 
 To obtain coverage of the test:
-	% gcov-4.7 -b Collatz.c++ TestCollatz.c++
+    % gcov-4.7 -b Collatz.c++ TestCollatz.c++
 */
 
 // --------

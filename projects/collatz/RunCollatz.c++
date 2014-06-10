@@ -12,12 +12,12 @@ To run the program:
     % valgrind RunCollatz < RunCollatz.in
 
 To obtain coverage of the run:
-	% gcov-4.7 -b Collatz.c++ RunCollatz.c++
+    % gcov-4.7 -b Collatz.c++ RunCollatz.c++
 
 To configure Doxygen:
     % doxygen -g
-	That creates the file "Doxyfile".
-	Make the following edits:
+    That creates the file "Doxyfile".
+    Make the following edits:
     EXTRACT_ALL            = YES
     EXTRACT_PRIVATE        = YES
     EXTRACT_STATIC         = YES

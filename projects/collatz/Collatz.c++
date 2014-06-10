@@ -19,11 +19,11 @@
 // ------------
 
 std::pair<int, int> collatz_read (std::istream& r) {
-	int i;
+    int i;
     r >> i;
     if (!r)
         return std::make_pair(0, 0);
-	int j;
+    int j;
     r >> j;
     return std::make_pair(i, j);}
 
@@ -48,8 +48,8 @@ void collatz_print (std::ostream& w, int i, int j, int v) {
 
 void collatz_solve (std::istream& r, std::ostream& w) {
     while (true) {
-    	const std::pair<int, int> p = collatz_read(r);
-    	if (p == std::make_pair(0, 0))
-    		return;
+        const std::pair<int, int> p = collatz_read(r);
+        if (p == std::make_pair(0, 0))
+            return;
         const int v = collatz_eval(p.first, p.second);
         collatz_print(w, p.first, p.second, v);}}
