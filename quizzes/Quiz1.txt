@@ -1,0 +1,19 @@
+--
+CS378: Quiz #1 (10 pts)
+--
+
+--------------------------------------------------------------------------
+ 1. What is the limitation when using C++'s assert macro instead of
+    Google Test's assertion macros when testing code?
+    (5 pts)
+--
+
+tests terminate on first failure
+
+--------------------------------------------------------------------------
+ 2. Besides unit testing, in what other context is using C++'s assert
+ 	macro inappropriate?
+    (4 pts)
+--
+
+user errors
