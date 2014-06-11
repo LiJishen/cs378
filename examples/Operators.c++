@@ -241,8 +241,8 @@ int main () {
     assert(!(a && c));
     assert(a || b);
     assert(a || c);
-    assert((a && b) == !(!a || !b));
-    assert((a && c) == !(!a || !c));
+    assert(a && b);
+    assert(!(a && c));
     }
 
     {
