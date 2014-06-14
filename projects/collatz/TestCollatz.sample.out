@@ -1,0 +1,56 @@
+Running main() from gtest_main.cc
+[==========] Running 7 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 7 tests from Collatz
+[ RUN      ] Collatz.read
+[       OK ] Collatz.read (30 ms)
+[ RUN      ] Collatz.eval_1
+TestCollatz.c++:67: Failure
+Value of: v
+  Actual: 1
+Expected: 20
+[  FAILED  ] Collatz.eval_1 (58 ms)
+[ RUN      ] Collatz.eval_2
+TestCollatz.c++:71: Failure
+Value of: v
+  Actual: 1
+Expected: 125
+[  FAILED  ] Collatz.eval_2 (6 ms)
+[ RUN      ] Collatz.eval_3
+TestCollatz.c++:75: Failure
+Value of: v
+  Actual: 1
+Expected: 89
+[  FAILED  ] Collatz.eval_3 (5 ms)
+[ RUN      ] Collatz.eval_4
+TestCollatz.c++:79: Failure
+Value of: v
+  Actual: 1
+Expected: 174
+[  FAILED  ] Collatz.eval_4 (5 ms)
+[ RUN      ] Collatz.print
+[       OK ] Collatz.print (12 ms)
+[ RUN      ] Collatz.solve
+TestCollatz.c++:98: Failure
+Value of: w.str()
+  Actual: "1 10 1\n100 200 1\n201 210 1\n900 1000 1\n"
+Expected: "1 10 20\n100 200 125\n201 210 89\n900 1000 174\n"
+Which is: "1 10 20
+100 200 125
+201 210 89
+900 1000 174
+"
+[  FAILED  ] Collatz.solve (22 ms)
+[----------] 7 tests from Collatz (157 ms total)
+
+[----------] Global test environment tear-down
+[==========] 7 tests from 1 test case ran. (202 ms total)
+[  PASSED  ] 2 tests.
+[  FAILED  ] 5 tests, listed below:
+[  FAILED  ] Collatz.eval_1
+[  FAILED  ] Collatz.eval_2
+[  FAILED  ] Collatz.eval_3
+[  FAILED  ] Collatz.eval_4
+[  FAILED  ] Collatz.solve
+
+ 5 FAILED TESTS
