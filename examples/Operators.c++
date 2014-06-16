@@ -2,6 +2,8 @@
 // Operators.c++
 // -------------
 
+// http://www.cplusplus.com/doc/tutorial/operators/
+
 #include <cassert>  // assert
 #include <iostream> // cout, endl
 

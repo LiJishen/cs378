@@ -2,6 +2,8 @@
 // Exceptions.c++
 // --------------
 
+// http://www.cplusplus.com/doc/tutorial/exceptions/
+
 #include <cassert>   // assert
 #include <cstring>   // strcmp
 #include <iostream>  // cout, endl

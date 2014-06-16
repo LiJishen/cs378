@@ -2,6 +2,8 @@
 // Types.c++
 // ---------
 
+// http://www.cplusplus.com/doc/tutorial/variables/
+
 #include <cassert>  // assert
 #include <iostream> // cout, endl
 #include <limits>   // numeric_limits

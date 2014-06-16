@@ -2,6 +2,9 @@
 // Exceptions2.c++
 // ---------------
 
+// http://www.cplusplus.com/doc/tutorial/exceptions/
+// http://www.cplusplus.com/reference/memory/auto_ptr/
+
 #include <cassert>   // assert
 #include <cstring>   // strcmp
 #include <iostream>  // cout, endl
