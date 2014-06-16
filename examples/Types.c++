@@ -14,10 +14,8 @@ struct A {
     T      x;};
 
 template <typename T>
-struct B {
-    int    i;
-    T      x;
-    double d;};
+struct B : A<T> {
+    A<T> y;};
 
 union U {
     int  i;
@@ -126,20 +124,8 @@ int main () {
     }
 
     {
-    B<int> x = {2, 3, 4.56};
-    assert(sizeof(B<int>) == 16);
-    assert(sizeof(x)      == 16);
-    }
-
-    {
     A<double> x = {2, 3.45, 6.78};
     assert(sizeof(A<double>) == 24);
-    assert(sizeof(x)         == 24);
-    }
-
-    {
-    B<double> x = {2, 3.45, 6.78};
-    assert(sizeof(B<double>) == 24);
     assert(sizeof(x)         == 24);
     }
 
@@ -150,9 +136,9 @@ int main () {
     }
 
     {
-    B< B<int> > x = {2, {2, 3, 4.56}, 3.45};
-    assert(sizeof(B< B<int> >) == 32);
-    assert(sizeof(x)           == 32);
+    B<double> x;
+    assert(sizeof(B<double>) == 48);
+    assert(sizeof(x)         == 48);
     }
 
     {
