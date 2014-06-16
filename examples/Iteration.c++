@@ -50,5 +50,25 @@ int main () {
     assert(s == 27);
     }
 
+    {
+    const int a[] = {2, 3, 4};
+          int s   = 0;
+    for (int v : a)
+        s += v;
+    assert(s == 9);
+    }
+
+    {
+    int a[] = {2, 3, 4};
+    int s   = 0;
+    for (int& r : a) {
+        s += r;
+        ++r;}
+    assert(s    == 9);
+    assert(a[0] == 3);
+    assert(a[1] == 4);
+    assert(a[2] == 5);
+    }
+
     cout << "Done." << endl;
     return 0;}
