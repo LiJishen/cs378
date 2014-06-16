@@ -2,6 +2,8 @@
 // Selection.c++
 // -------------
 
+// http://www.cplusplus.com/doc/tutorial/control/
+
 #include <cassert>  // assert
 #include <iostream> // cout, endl
 

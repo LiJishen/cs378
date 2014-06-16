@@ -2,6 +2,8 @@
 // Factorial.c++
 // -------------
 
+// http://www.cplusplus.com/articles/D2N36Up4/
+
 #include <cassert>  // assert
 #include <ctime>    // clock, clock_t, CLOCKS_PER_SEC
 #include <iomanip>  // setprecision, setw
