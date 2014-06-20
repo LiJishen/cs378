@@ -1,0 +1,30 @@
+--
+CS378: Quiz #5 (5 pts) <Sam>
+--
+
+--------------------------------------------------------------------------
+ 1. In C++, for the '<<' operator that is defined on 'ostream', what is the
+    l-value / r-value nature of the left argument, the right argument, and
+    the return?
+    (3 pts)
+--
+
+l-value, r-value, l-value
+
+--------------------------------------------------------------------------
+ 2. In C++, list FOUR things that you can do wrong with manual memory
+    management.
+    (4 pts)
+--
+
+never delete
+delete the wrong address
+delete too many times
+delete too early
+
+--------------------------------------------------------------------------
+ 3. Even if perfect what is that limitation of a tool like Valgrind?
+    (2 pts)
+--
+
+it can only check execution paths that you test
