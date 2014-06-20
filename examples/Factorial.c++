@@ -10,13 +10,13 @@
 #include <iostream> // cout, endl
 #include <string>   // string
 
-int factorial_1 (int n) {
+int factorial_recursion (int n) {
     assert(n >= 0);
     if (n < 2)
         return 1;
-    return n * factorial_1(n - 1);}
+    return n * factorial_recursion(n - 1);}
 
-int factorial_2 (int n) {
+int factorial_iteration (int n) {
     assert(n >= 0);
     int x = 1;
     while (n > 1) {
@@ -25,8 +25,8 @@ int factorial_2 (int n) {
     return x;}
 
 template <typename F>
-void test (F f, std::string n, std::string t) {
-    std::cout << n << " (" << t << ")" << std::endl;
+void test (F f, const std::string& s) {
+    std::cout << s << std::endl;
     assert(f(0) ==   1);
     assert(f(1) ==   1);
     assert(f(2) ==   2);
@@ -45,8 +45,8 @@ int main () {
     using namespace std;
     cout << "Factorial.c++" << endl << endl;
 
-    test(factorial_1, "factorial_1", "recursion");
-    test(factorial_2, "factorial_2", "iteration");
+    test(factorial_recursion, "factorial_recursion");
+    test(factorial_iteration, "factorial_iteration");
 
     cout << "Done." << endl;
     return 0;}
@@ -54,13 +54,13 @@ int main () {
 /*
 Factorial.c++
 
-factorial_1 (recursion)
+factorial_recursion
 2004189184
-0.006 milliseconds
+0.005 milliseconds
 
-factorial_2 (iteration)
+factorial_iteration
 2004189184
-0.002 milliseconds
+0.003 milliseconds
 
 Done.
 */
