@@ -5,6 +5,9 @@ CS378: Quiz #7 (10 pts) <Vidhoon>
 /* -----------------------------------------------------------------------
  1. What is the output of the following program?
     (9 pts)
+
+4 pts: 3 true
+5 pts: 3 false
 */
 
 #include <iostream> // cout, endl
