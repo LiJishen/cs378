@@ -4,10 +4,9 @@
 
 #include <algorithm> // equal
 #include <cassert>   // assert
-#include <cstring>   // strlen
 #include <iostream>  // cout, endl
 
-bool equal_1 (const char* b, const char* e, const char* x) {
+bool equal_1 (const int* b, const int* e, const int* x) {
     while (b != e) {
         if (*b != *x)
             return false;
@@ -28,9 +27,9 @@ int main () {
     using namespace std;
     cout << "Equal.c++" << endl;
 
-    const char a[] = "abCbA";
-    const int  s   = strlen(a);
-    const char b[] = "abCbAx";
+    const int a[] = {2, 3, 4};
+    const int s   = sizeof(a) / sizeof(a[0]);
+    const int b[] = {2, 3, 4, 5};
 
     assert(equal_1(a, a + s, b));
     assert(equal_2(a, a + s, b));

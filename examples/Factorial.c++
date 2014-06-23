@@ -16,6 +16,17 @@ int factorial_recursion (int n) {
         return 1;
     return n * factorial_recursion(n - 1);}
 
+int factorial_tail_recursion_aux (int n, int m) {
+    assert(n >= 0);
+    assert(m >= 1);
+    if (n < 2)
+        return m;
+    return factorial_tail_recursion_aux(n - 1, n * m);}
+
+int factorial_tail_recursion (int n) {
+    assert(n >= 0);
+    return factorial_tail_recursion_aux(n, 1);}
+
 int factorial_iteration (int n) {
     assert(n >= 0);
     int x = 1;
@@ -35,7 +46,7 @@ void test (F f, const std::string& s) {
     assert(f(5) == 120);
 
     const clock_t b = clock();
-    std::cout << f(16) << std::endl;
+    std::cout << f(12) << std::endl;
     const clock_t e = clock();
     std::cout << std::fixed << std::setprecision(3) << std::setw(5);
     std::cout << ((e - b) * 1000.0 / CLOCKS_PER_SEC) << " milliseconds" << std::endl;
@@ -45,8 +56,9 @@ int main () {
     using namespace std;
     cout << "Factorial.c++" << endl << endl;
 
-    test(factorial_recursion, "factorial_recursion");
-    test(factorial_iteration, "factorial_iteration");
+    test(factorial_recursion,      "factorial_recursion");
+    test(factorial_tail_recursion, "factorial_tail_recursion");
+    test(factorial_iteration,      "factorial_iteration");
 
     cout << "Done." << endl;
     return 0;}
@@ -55,11 +67,15 @@ int main () {
 Factorial.c++
 
 factorial_recursion
-2004189184
+479001600
 0.005 milliseconds
 
+factorial_tail_recursion
+479001600
+0.004 milliseconds
+
 factorial_iteration
-2004189184
+479001600
 0.003 milliseconds
 
 Done.
