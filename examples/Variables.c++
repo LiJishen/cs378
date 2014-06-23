@@ -2,6 +2,8 @@
 // Variables.c++
 // -------------
 
+// http://www.cplusplus.com/doc/tutorial/pointers/
+
 #include <algorithm> // equal
 #include <cassert>   // assert
 #include <iostream>  // cout, endl

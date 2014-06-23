@@ -2,6 +2,8 @@
 // Equal.c++
 // ---------
 
+// http://www.cplusplus.com/reference/algorithm/equal/
+
 #include <algorithm> // equal
 #include <cassert>   // assert
 #include <iostream>  // cout, endl
