@@ -3,7 +3,7 @@ CS378: Exercise #1
 */
 
 /* -----------------------------------------------------------------------
-Define the function my_equal() such it behaves as follows:
+Define the function my_equal() such that it behaves as follows:
 */
 
 // http://www.cplusplus.com/reference/algorithm/equal/
@@ -54,9 +54,9 @@ int main () {
     cout << "Equal.c++" << endl;
 
     {
-    const int a[] = {2, 3, 4};
-    const int b[] = {2, 3, 4, 5};
-    const int s   = sizeof(a) / sizeof(a[0]);
+    const int    a[] = {2, 3, 4};
+    const int    b[] = {2, 3, 4, 5};
+    const size_t s   = sizeof(a) / sizeof(a[0]);
     assert(equal_1(a, a + s, b));
     assert(equal_2(a, a + s, b));
     assert(equal_3(a, a + s, b));
@@ -67,7 +67,7 @@ int main () {
     {
     const double a[] = {2, 3, 4};
     const double b[] = {2, 3, 4, 5};
-    const int s      = sizeof(a) / sizeof(a[0]);
+    const size_t s   = sizeof(a) / sizeof(a[0]);
 //  assert(equal_1(a, a + s, b));                // error: no matching function for call to 'equal_1'
     assert(equal_2(a, a + s, b));
     assert(equal_3(a, a + s, b));
@@ -78,7 +78,7 @@ int main () {
     {
     const int    a[] = {2, 3, 4};
     const double b[] = {2, 3, 4, 5};
-    const int s      = sizeof(a) / sizeof(a[0]);
+    const size_t s   = sizeof(a) / sizeof(a[0]);
 //  assert(equal_1(a, a + s, b));                // error: no matching function for call to 'equal_1'
 //  assert(equal_2(a, a + s, b));                // error: no matching function for call to 'equal_2'
     assert(equal_3(a, a + s, b));
